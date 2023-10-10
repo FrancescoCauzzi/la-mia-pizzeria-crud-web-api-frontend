@@ -31,14 +31,13 @@ export default {
 </script>
 
 <template>
-  <h1>This is my front end</h1>
+  <div class="__index-ctn">
+    <h1>This is my front end</h1>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.__red {
-  background-color: red;
-  .__blue {
-    color: blue;
-  }
+.__index-ctn {
+  background-color: gray;
 }
 </style>
