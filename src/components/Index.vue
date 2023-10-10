@@ -15,8 +15,9 @@ export default {
       axios
         .get("https://localhost:7249/api/Pizzas/GetPizzas")
         .then((response) => {
+          console.log(response.data);
           if (response.data.success) {
-            console.log(response.data);
+            console.log(response.data.pizzaList);
           } else {
             console.log("We did not find any pizza");
           }
@@ -30,9 +31,7 @@ export default {
 </script>
 
 <template>
-  <div class="__red">
-    <h1 class="__blue">This is my front end</h1>
-  </div>
+  <h1>This is my front end</h1>
 </template>
 
 <style lang="scss" scoped>
